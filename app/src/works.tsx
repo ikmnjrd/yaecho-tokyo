@@ -7,8 +7,13 @@ interface IProps {
 export const Works: React.FC<IProps> = ({name}) => {
 
   return (
-      <div>
-        works
-      </div>
+    <div>
+      <h2>{name}</h2>
+      <ul>
+        <li>
+          <a href="https://amongus-ike-tool.web.app/">https://amongus-ike-tool.web.app/</a>
+        </li>
+      </ul>
+    </div>
   );
 };
