@@ -55,7 +55,7 @@ export const PrivacyPolicy: React.FC = ({}) => {
         </li>
         <li>
           個人情報の取り扱いに関する問い合わせ窓口
-          <div>Email：info@yaecho.com</div>
+          <div>Email：ikmonjara2rnmt@gmail.com</div>
         </li>
         <li>
           当社はお客様の個人情報の取り扱いに関係する法令、その他の規範を遵守します。
