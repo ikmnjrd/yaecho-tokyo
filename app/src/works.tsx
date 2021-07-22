@@ -11,7 +11,10 @@ export const Works: React.FC<IProps> = ({name}) => {
       <h2>{name}</h2>
       <ul>
         <li>
-          <a href="https://amongus-ike-tool.web.app/">https://amongus-ike-tool.web.app/</a>
+          <a href="https://amongus-ike-tool.web.app/">https://amongus-ike-tool.web.app</a>
+        </li>
+        <li>
+          <a href="https://museulium.com/">https://museulium.com</a>
         </li>
       </ul>
     </div>
