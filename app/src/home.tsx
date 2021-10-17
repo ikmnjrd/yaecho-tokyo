@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Heading } from "@chakra-ui/react";
 
 interface IProps {
   name: string;
@@ -7,8 +8,8 @@ interface IProps {
 export const Home: React.FC<IProps> = ({name}) => {
 
   return (
-      <h2>
+    <Heading as="h2" size="xl">
         You are Welcome.
-      </h2>
+    </Heading>
   );
 };
