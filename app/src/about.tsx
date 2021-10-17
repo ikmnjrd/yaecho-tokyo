@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { List, ListItem, ListIcon, OrderedList, UnorderedList } from "@chakra-ui/react"
 
 interface IProps {
   name: string;
@@ -7,28 +8,30 @@ interface IProps {
 export const About: React.FC<IProps> = ({name}) => {
 
   return (
-      <div>
+      <>
         <h2>{name}</h2>
-        <details>
-          <summary>Who?</summary>
-          <blockquote>
-            This Web Developer vend myself
-          </blockquote>
-        </details>
+        <UnorderedList>
+          <ListItem>
+            <summary>Who?</summary>
+            <blockquote>
+              This Web Developer vend myself
+            </blockquote>
+          </ListItem>
 
-        <details>
-          <summary>How?</summary>
-          <blockquote>
-            Relentless, Reckless Forever
-          </blockquote>
-        </details>
+          <ListItem>
+            <summary>How?</summary>
+            <blockquote>
+              Relentless, Reckless Forever
+            </blockquote>
+          </ListItem>
 
-        <details>
-          <summary>Where?</summary>
-          <blockquote>
-            in Tokyo.
-          </blockquote>
-        </details>
-      </div>
+          <ListItem>
+            <summary>Where?</summary>
+            <blockquote>
+              in Tokyo.
+            </blockquote>
+          </ListItem>
+        </UnorderedList>
+      </>
   );
 };
