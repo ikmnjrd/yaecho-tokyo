@@ -2,9 +2,9 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, Redirect, Link as ReachLink } from 'react-router-dom';
 import { ChakraProvider } from "@chakra-ui/react"
-import {Home} from './home';
-import {Works} from './works';
-import {About} from './about';
+import { Home } from './home';
+import { Works } from './works';
+import { About } from './about';
 import {PrivacyPolicy} from './privacy-policy';
 import { Box, Heading, Container, Link } from "@chakra-ui/react";
 
@@ -32,7 +32,6 @@ const App: React.FC = () => {
           <Link as={ReachLink} to="/works">Works</Link>
         </Box>
               
-        
         <Box m={2}>
           <Switch>
             <Route exact path="/" >
