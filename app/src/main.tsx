@@ -1,12 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch, Redirect, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect, Link as ReachLink } from 'react-router-dom';
 import { ChakraProvider } from "@chakra-ui/react"
 import {Home} from './home';
 import {Works} from './works';
 import {About} from './about';
 import {PrivacyPolicy} from './privacy-policy';
-import { Box, Heading, Container } from "@chakra-ui/react";
+import { Box, Heading, Container, Link } from "@chakra-ui/react";
 
 
 const App: React.FC = () => {
@@ -25,11 +25,11 @@ const App: React.FC = () => {
           >
             yaecho
           </Heading>
-          <Link to="/">Home</Link>
+          <Link as={ReachLink} to="/">Home</Link>
           {` / `}
-          <Link to="/about">About</Link>
+          <Link as={ReachLink} to="/about">About</Link>
           {` / `}
-          <Link to="/works">Works</Link>
+          <Link as={ReachLink} to="/works">Works</Link>
         </Box>
               
         
