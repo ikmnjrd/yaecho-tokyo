@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Box, Text, Link, Stack, Divider, Heading } from "@chakra-ui/react"
+import ColorModeButton from './colorModeButton';
 
 interface IProps {
   name: string;
@@ -9,7 +10,9 @@ export const Works: React.FC<IProps> = ({name}) => {
 
   return (
     <>
-      <Heading as="h2" size="xl">{name}</Heading>
+      <Heading as="h2" size="xl">
+        {name}<ColorModeButton />
+      </Heading>
       <Stack spacing="24px">
         <Divider />
         <Box>
